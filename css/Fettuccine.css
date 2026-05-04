@@ -1,20 +1,40 @@
 body{ 
     
-/*border: double cornflowerblue;*/
-background:#C78979; 
-color:#73344E;
+ /*border: double cornflowerblue;*/
+background:#af5e4a; 
+color:#0c2350;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: bold; 
+font-size:18px;
 }
 
-h1,h2,h3{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1{
+     /*border: double cornflowerblue;*/
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:black;
-    text-shadow: 3px 3px 3px #e98df7;
-    font-size:47px;
+    text-shadow: 3px 3px 3px #89af8f;
+    font-size:40px;
+}
+h2{
+    /*border: double cornflowerblue;*/
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(215, 208, 208);
+    text-shadow: 3px 3px 3px #1e45b2;
+    font-size:40px;
+}
+.legend{
+    font-size:20px;
+}
+h3{
+    /*border: double cornflowerblue;*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(175, 167, 167);
+    text-shadow: 3px 3px 3px #062d3a;
+    font-size:30px;
     }
 p {
     color:black;
+    font-size:20px;
 }
 .p2{
     text-align: left;
@@ -22,6 +42,7 @@ p {
 
 ul{
     color:black;
+    font-size: 20px;
     
 }
 
@@ -29,20 +50,22 @@ li{
     color:black;
 }
 ol{
-    color:black
+    color:black;
+    font-size:20px;
 }
 
 .footer{
-display:flex;
-justify-content: space-around;
-position:relative;
-right:400px;
+color:black;
+display: flex;
+justify-content:center;
+gap:600px;
+padding:20px;
 
 }
 
 /*End of styles*/
 
-.wrapper{
+/*.wrapper{
  display: flex;
 }
 
@@ -50,7 +73,7 @@ right:400px;
 
   flex: 1;
 
-}
+}*/
 
 .box1{ 
 /*border: double cornflowerblue;*/
@@ -100,7 +123,26 @@ margin:5px;
 position:relative;
 top:-300px
 }
+.img{
+    max: width 100%; 
+    height:auto;
+}
+*{
+    box-sizing: border-box;
+}
 
+[class*="col"] {
+    float: left;
+    width:33.33%;
+    padding:15px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
 
 
 
